@@ -21,9 +21,7 @@ const loginParent = document.querySelector('.loginParent');
 const login = function () {
     for (const acc of Object.values(accs)) {
         if (userInput.value === acc.username && passInput.value === acc.password) {
-            body.classList.add('logged-body');
-            loginWindow.classList.add('hide');
-            loginParent.style.marginTop = '0em';
+            window.location.href = 'app.html';
         }
     }
 }

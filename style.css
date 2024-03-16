@@ -32,7 +32,7 @@ body {
 }
 
 .loginParent {
-    margin-top: 0em;
+    margin-top: 6em;
     display: flex;
     justify-content: center;
 }
@@ -158,8 +158,8 @@ input:focus {
     width: 20vw;
     text-align: center;
     background-color: black;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
     color: white;
 }
 
@@ -169,7 +169,26 @@ input:focus {
     .menu {
         display: none;
     }
-    .search .search-input {
+    .search {
         width: 100vw;
+        margin-bottom: 2em;
+    }
+
+    .search-input {
+        width: 100vw;
+    }
+
+    .movies {
+        grid-template-columns: 35vw 35vw;
+    }
+
+    .movies img {
+        width: 35vw;
+    }
+
+    .movie {
+        width: 35vw;
+        border: none;
+        box-shadow: 0 0 10px rgba(5, 5, 5, 2);
     }
 }
