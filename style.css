@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto Light", sans-serif;
+    background-image: url("log-in-background-image-only-the-background-fea-upscaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logged-body {
+    background-color: black;
+    background-image: none;
+}
+
+.head {
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#logoFlix {
+    height: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.loginParent {
+    margin-top: 0em;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    width: 20rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 2);
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginBtn {
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 1em;
+    width: 100px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 2);
+}
+
+#loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.menu p {
+    font-size: 1em;
+    margin-left: 1.5em;
+}
+
+.menu h1 {
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.search-input {
+    border-radius: 0;
+    height: 2em;
+    border: none;
+}
+
+.search button {
+    height: 2em;
+}
+
+.search .search-input {
+    width: 80vw;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies img {
+    border-radius: 12px;
+    width: 20vw;
+    height: inherit;
+}
+
+.movie {
+    width: 20vw;
+    text-align: center;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+    .search .search-input {
+        width: 100vw;
+    }
+}
